@@ -1,0 +1,340 @@
+@import 'parts/reset';
+@import 'parts/fonts';
+@import 'parts/mixins';
+
+/* Add Vendor Stylesheets here */
+
+/* ========================================================================= */
+/* !STYLES */
+/* ========================================================================= */
+
+html, body {
+	position: relative;
+	font: 400 15px/1.5 "ProximaNova", Helvetica, Arial, sans-serif;
+	background-color: #111;
+	color: #fff;
+	z-index: 0;
+}
+
+/* != SELECTION STYLES (Leaving these blank will show no indication of text selection) ===== */
+
+::selection         {
+	background: $color-primary;
+	color: #fff;
+}
+::-moz-selection    {
+	background: $color-primary;
+	color: #fff;
+}
+::-webkit-selection {
+	background: $color-primary;
+	color: #fff;
+}
+
+/* != DEFAULT WORDPRESS STYLES = USE AS NEEDED = .wp-caption = .wp-caption-dd = .wpGallery = .shutter = .shutterset ==== */
+
+.aligncenter {
+	display: block;
+	margin: 25px auto;
+}
+
+.alignleft {
+	float: left;
+	margin: 0 25px 25px 0;
+}
+
+.alignright {
+	float: right;
+	margin: 0 0 25px 25px;
+}
+
+.alignnone {
+	display: inline-block;
+}
+
+/* != LAYOUT STYLES ===== */
+
+h1 {
+	font-size: 28px;
+	letter-spacing: 0.5px;
+}
+
+h2 {
+	color: $color-font;
+	font-size: 24px;
+	letter-spacing: 0.2px;
+
+	i {
+		margin-right: 20px;
+		color: $color-primary;
+	}
+}
+
+h3 {
+	color: $color-font;
+	font-size: 18px;
+
+	i {
+		margin-right: 10px;
+		color: $color-secondary;
+	}
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+a {
+	color: $color-font;
+
+	&:hover {
+		color: $color-primary;
+	}
+}
+
+strong {
+	font-weight: 500;
+}
+
+.content-main ul:not([class*="gf"]) {
+	> li {
+		position: relative;
+		padding-left: 10px;
+		&:before {
+			content: '\2022';
+			position: absolute;
+			left: 0; }
+	}
+}
+.content-main ol {
+	counter-reset:li;
+	> li {
+		position: relative;
+		padding-left: 20px;
+		&:before {
+			content:counter(li) '. ';
+			counter-increment: li;
+			position: absolute;
+			right: calc(100% - 15px);
+		}
+	}
+}
+
+.wrap {
+	max-width: 1180px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.flex {
+	display: flex;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+/* != PLACEHOLDER ATTRIBUTE STYLES = input or textarea - placeholder="whatever" ===== */
+/*
+    ::-webkit-input-placeholder {
+        color: #aaa;
+    }
+
+    ::-moz-placeholder {
+        color: #aaa;
+    }
+*/
+
+input {
+	&[type=text],
+	&[type=password],
+	&[type=url],
+	&[type=number],
+	&[type=tel],
+	&[type=email] {
+
+	}
+}
+
+input[type=submit], button {
+	display: inline-block;
+	cursor: pointer;
+	&:hover {
+	}
+}
+
+.card {
+	background-color: $color-white;
+	color: $color-font;
+	box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+
+	.card-header {
+
+	}
+
+	.card-body {
+		padding: 20px;
+	}
+}
+
+.main-content {
+	justify-content: space-between;
+
+	.content-main {
+		width: 65%;
+		margin-left: 20px;
+	}
+
+	.content-side {
+		width: 35%;
+	}
+
+	@include break(768) {
+		display: block;
+		
+		.content-main {
+			width: 100%;
+			margin-top: 20px;
+			margin-left: 0;
+		}
+
+		.content-side {
+			width: 100%;
+		}
+	}
+}
+
+.section-title {
+	margin-bottom: 20px;
+}
+
+.divider {
+	margin-top: 25px;
+	padding-top: 25px;
+	border-top: 1px solid $color-border;
+}
+
+.top-space {
+	margin-top: 25px;;
+}
+
+.top-space-md {
+	margin-top: 20px;
+}
+
+.top-space-sm {
+	margin-top: 15px;
+}
+
+#header {
+	height: 60px;
+	
+	.wrap {
+		height: 100%;
+		justify-content: space-between;
+		align-items: center;
+		
+		.logo {
+			display: block;
+			width: 40px;
+			height: 40px;
+		}
+	}
+	
+	nav {
+		ul {
+			li {
+				a {
+					display: block;
+					height: 60px;
+					padding: 0 10px;
+					line-height: 60px;
+					font-size: 18px;
+					color: $color-white;
+
+					&:hover {
+						color: $color-primary;
+					}
+				}
+				
+			}
+		}
+	}
+}
+
+#main {
+	padding: 40px 0;
+
+	@include break(768) {
+		padding: 20px 0;
+	}
+}
+
+.profile-image {
+	position: relative;
+	font-size: 0;
+
+	&::before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: rgba(0, 0, 0, 0.4);
+		background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.5) 100%);
+	}
+
+	h1 {
+		position: absolute;
+		left: 20px;
+		bottom: 5px;
+		color: $color-font;
+	}
+}
+
+.profile-bio {
+	ul {
+		li {
+			i {
+				color: $color-secondary;
+				margin-right: 10px;
+				font-size: 16px;
+			}
+			& + li {
+				margin-top: 5px;
+			}
+		}
+	}
+}
+
+.profile-skills {
+	h2 {
+		i {
+			margin-right: 10px;
+		}
+	}
+
+	h3 {
+		font-size: 16px;
+		margin-bottom: 5px;
+	}
+}
+
+.profile-experience {
+	margin-top: 20px;
+}
+
+.profile-projects {
+	margin-top: 20px;
+}

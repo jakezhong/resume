@@ -1,0 +1,17 @@
+/* ========================================================================= */
+/* !SASS VARIABLES & MIXINS */
+/* ========================================================================= */
+
+$color-white: #fff;
+$color-black: #111;
+$color-primary: #ff006c;
+$color-secondary: #0089ff;
+$color-border: #efefef;
+$color-font: #333;
+
+// Breakpoint Mixin
+@mixin break($p, $b: 'max-width'){
+	@media screen and ( $b: $p + px ){
+		@content;
+	}
+}

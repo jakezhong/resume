@@ -1,0 +1,218 @@
+/* ========================================================================= */
+/* !RESETS AND DEFAULTS */
+/* ========================================================================= */
+html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, img, ins, kbd, q, samp, var, hr, acronym, dl, dt, dd, ol, ul, li, pre, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { border: 0; outline: 0; font-style: normal; font-weight: 400; font-size: 100%; vertical-align: baseline; margin: 0; padding: 0; -webkit-text-size-adjust: 100%; }
+
+em, strong, b, i, a, span, sub, sup, small { border: 0; outline: 0; font-size: 100%; vertical-align: baseline; margin: 0; padding: 0; }
+
+/* a:focus { outline:0; } :focus, :active { outline:none; outline:0; } ::-moz-focus-inner { outline:none; } */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+li { list-style: none; }
+
+a { text-decoration: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+hr { display: block; height: 1px; border-top: 1px solid #000; color: #000; }
+
+input, select { vertical-align: middle; }
+
+sub { vertical-align: sub; font-size: smaller; line-height: 0px; }
+
+sup { vertical-align: super; font-size: smaller; line-height: 0px; }
+
+input, button, textarea, select, label, img { display: inline-block; max-width: 100%; height: auto; }
+
+input, button, textarea, select, optgroup, option { font-family: inherit; font-size: inherit; font-style: inherit; font-weight: inherit; }
+
+input, button, textarea, select { -webkit-appearance: none; outline: 1px solid transparent; }
+
+textarea { resize: none; overflow: auto; }
+
+button, a span { cursor: pointer; }
+
+button { border: 0; text-align: center; }
+
+button::-moz-focus-inner { padding: 0; border: 0; }
+
+table { table-layout: fixed; }
+
+a[href^=tel] { color: inherit; }
+
+select { -moz-appearance: none; -webkit-appearance: none; -ms-appearance: none; }
+
+select:-moz-focusring { color: transparent; }
+
+select::-ms-expand { display: none; }
+
+/* != FONT SMOOTHING */
+body, input, button, textarea { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+/* != ms-clear */
+input[type=text]::-ms-clear { display: none; }
+
+/* != BACKGROUND POSITION AND BOX SIZING */
+*, *:before, *:after { -webkit-box-sizing: border-box; box-sizing: border-box; background-position: center; background-repeat: no-repeat; }
+
+/* != .clearfix - CLEAR ELEMENTS */
+.clear { clear: both; }
+
+.clearfix { display: block; }
+
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+/* != .wordwrap - CONTINUE LONG URLS/WORDS ON NEXT LINE */
+.wordwrap { white-space: pre; white-space: pre-wrap; white-space: pre-line; white-space: -pre-wrap; white-space: -o-pre-wrap; white-space: -moz-pre-wrap; word-wrap: break-word; }
+
+/* != Proxima Nova ====================================== */
+@font-face { font-family: 'ProximaNova'; src: url("../fonts/Proxima-Nova/ProximaNova-Thin-webfont.eot"); src: url("../fonts/Proxima-Nova/ProximaNova-Thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima-Nova/ProximaNova-Thin-webfont.woff") format("woff"), url("../fonts/Proxima-Nova/ProximaNova-Thin-webfont.ttf") format("truetype"), url("../fonts/Proxima-Nova/ProximaNova-Thin-webfont.svg#proxima_nova_ththin") format("svg"); font-weight: 200; font-style: normal; }
+
+@font-face { font-family: 'ProximaNova'; src: url("../fonts/Proxima-Nova/ProximaNova-ThinIt-webfont.eot"); src: url("../fonts/Proxima-Nova/ProximaNova-ThinIt-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima-Nova/ProximaNova-ThinIt-webfont.woff") format("woff"), url("../fonts/Proxima-Nova/ProximaNova-ThinIt-webfont.ttf") format("truetype"), url("../fonts/Proxima-Nova/ProximaNova-ThinIt-webfont.svg#proxima_novathin_italic") format("svg"); font-weight: 200; font-style: italic; }
+
+@font-face { font-family: 'ProximaNova'; src: url("../fonts/Proxima-Nova/ProximaNova-Light-webfont.eot"); src: url("../fonts/Proxima-Nova/ProximaNova-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima-Nova/ProximaNova-Light-webfont.woff") format("woff"), url("../fonts/Proxima-Nova/ProximaNova-Light-webfont.ttf") format("truetype"), url("../fonts/Proxima-Nova/ProximaNova-Light-webfont.svg#proxima_nova_ltlight") format("svg"); font-weight: 300; font-style: normal; }
+
+@font-face { font-family: 'ProximaNova'; src: url("../fonts/Proxima-Nova/ProximaNova-LightIt-webfont.eot"); src: url("../fonts/Proxima-Nova/ProximaNova-LightIt-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima-Nova/ProximaNova-LightIt-webfont.woff") format("woff"), url("../fonts/Proxima-Nova/ProximaNova-LightIt-webfont.ttf") format("truetype"), url("../fonts/Proxima-Nova/ProximaNova-LightIt-webfont.svg#proxima_novalight_italic") format("svg"); font-weight: 300; font-style: italic; }
+
+@font-face { font-family: 'ProximaNova'; src: url("../fonts/Proxima-Nova/ProximaNova-Reg-webfont.eot"); src: url("../fonts/Proxima-Nova/ProximaNova-Reg-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima-Nova/ProximaNova-Reg-webfont.woff") format("woff"), url("../fonts/Proxima-Nova/ProximaNova-Reg-webfont.ttf") format("truetype"), url("../fonts/Proxima-Nova/ProximaNova-Reg-webfont.svg#proxima_nova_rgregular") format("svg"); font-weight: 400; font-style: normal; }
+
+@font-face { font-family: 'ProximaNova'; src: url("../fonts/Proxima-Nova/ProximaNova-RegIt-webfont.eot"); src: url("../fonts/Proxima-Nova/ProximaNova-RegIt-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima-Nova/ProximaNova-RegIt-webfont.woff") format("woff"), url("../fonts/Proxima-Nova/ProximaNova-RegIt-webfont.ttf") format("truetype"), url("../fonts/Proxima-Nova/ProximaNova-RegIt-webfont.svg#proxima_novaregular_italic") format("svg"); font-weight: 400; font-style: italic; }
+
+@font-face { font-family: 'ProximaNova'; src: url("../fonts/Proxima-Nova/ProximaNova-Sbold-webfont.eot"); src: url("../fonts/Proxima-Nova/ProximaNova-Sbold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima-Nova/ProximaNova-Sbold-webfont.woff") format("woff"), url("../fonts/Proxima-Nova/ProximaNova-Sbold-webfont.ttf") format("truetype"), url("../fonts/Proxima-Nova/ProximaNova-Sbold-webfont.svg#proxima_nova_ltsemibold") format("svg"); font-weight: 500; font-style: normal; }
+
+@font-face { font-family: 'ProximaNova'; src: url("../fonts/Proxima-Nova/ProximaNova-SboldIt-webfont.eot"); src: url("../fonts/Proxima-Nova/ProximaNova-SboldIt-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima-Nova/ProximaNova-SboldIt-webfont.woff") format("woff"), url("../fonts/Proxima-Nova/ProximaNova-SboldIt-webfont.ttf") format("truetype"), url("../fonts/Proxima-Nova/ProximaNova-SboldIt-webfont.svg#proxima_novasemibold_italic") format("svg"); font-weight: 500; font-style: italic; }
+
+@font-face { font-family: 'ProximaNova'; src: url("../fonts/Proxima-Nova/ProximaNova-Bold-webfont.eot"); src: url("../fonts/Proxima-Nova/ProximaNova-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima-Nova/ProximaNova-Bold-webfont.woff") format("woff"), url("../fonts/Proxima-Nova/ProximaNova-Bold-webfont.ttf") format("truetype"), url("../fonts/Proxima-Nova/ProximaNova-Bold-webfont.svg#proxima_nova_rgbold") format("svg"); font-weight: 600; font-style: normal; }
+
+@font-face { font-family: 'ProximaNova'; src: url("../fonts/Proxima-Nova/ProximaNova-BoldIt-webfont.eot"); src: url("../fonts/Proxima-Nova/ProximaNova-BoldIt-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima-Nova/ProximaNova-BoldIt-webfont.woff") format("woff"), url("../fonts/Proxima-Nova/ProximaNova-BoldIt-webfont.ttf") format("truetype"), url("../fonts/Proxima-Nova/ProximaNova-BoldIt-webfont.svg#proxima_novabold_italic") format("svg"); font-weight: 600; font-style: italic; }
+
+@font-face { font-family: 'ProximaNova'; src: url("../fonts/Proxima-Nova/ProximaNova-Xbold-webfont.eot"); src: url("../fonts/Proxima-Nova/ProximaNova-Xbold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima-Nova/ProximaNova-Xbold-webfont.woff") format("woff"), url("../fonts/Proxima-Nova/ProximaNova-Xbold-webfont.ttf") format("truetype"), url("../fonts/Proxima-Nova/ProximaNova-Xbold-webfont.svg#proxima_nova_thextrabold") format("svg"); font-weight: 700; font-style: normal; }
+
+@font-face { font-family: 'ProximaNova'; src: url("../fonts/Proxima-Nova/ProximaNova-XboldIt-webfont.eot"); src: url("../fonts/Proxima-Nova/ProximaNova-XboldIt-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima-Nova/ProximaNova-XboldIt-webfont.woff") format("woff"), url("../fonts/Proxima-Nova/ProximaNova-XboldIt-webfont.ttf") format("truetype"), url("../fonts/Proxima-Nova/ProximaNova-XboldIt-webfont.svg#proxima_novaextrabold_italic") format("svg"); font-weight: 700; font-style: italic; }
+
+@font-face { font-family: 'ProximaNova'; src: url("../fonts/Proxima-Nova/ProximaNova-Black-webfont.eot"); src: url("../fonts/Proxima-Nova/ProximaNova-Black-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima-Nova/ProximaNova-Black-webfont.woff") format("woff"), url("../fonts/Proxima-Nova/ProximaNova-Black-webfont.ttf") format("truetype"), url("../fonts/Proxima-Nova/ProximaNova-Black-webfont.svg#proxima_nova_blblack") format("svg"); font-weight: 800; font-style: normal; }
+
+@font-face { font-family: 'ProximaNova'; src: url("../fonts/Proxima-Nova/ProximaNova-BlackIt-webfont.eot"); src: url("../fonts/Proxima-Nova/ProximaNova-BlackIt-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima-Nova/ProximaNova-BlackIt-webfont.woff") format("woff"), url("../fonts/Proxima-Nova/ProximaNova-BlackIt-webfont.ttf") format("truetype"), url("../fonts/Proxima-Nova/ProximaNova-BlackIt-webfont.svg#proxima_novablack_italic") format("svg"); font-weight: 800; font-style: italic; }
+
+/* ========================================================================= */
+/* !SASS VARIABLES & MIXINS */
+/* ========================================================================= */
+/* Add Vendor Stylesheets here */
+/* ========================================================================= */
+/* !STYLES */
+/* ========================================================================= */
+html, body { position: relative; font: 400 15px/1.5 "ProximaNova", Helvetica, Arial, sans-serif; background-color: #111; color: #fff; z-index: 0; }
+
+/* != SELECTION STYLES (Leaving these blank will show no indication of text selection) ===== */
+::-moz-selection { background: #ff006c; color: #fff; }
+::selection { background: #ff006c; color: #fff; }
+
+::-moz-selection { background: #ff006c; color: #fff; }
+
+::-webkit-selection { background: #ff006c; color: #fff; }
+
+/* != DEFAULT WORDPRESS STYLES = USE AS NEEDED = .wp-caption = .wp-caption-dd = .wpGallery = .shutter = .shutterset ==== */
+.aligncenter { display: block; margin: 25px auto; }
+
+.alignleft { float: left; margin: 0 25px 25px 0; }
+
+.alignright { float: right; margin: 0 0 25px 25px; }
+
+.alignnone { display: inline-block; }
+
+/* != LAYOUT STYLES ===== */
+h1 { font-size: 28px; letter-spacing: 0.5px; }
+
+h2 { color: #333; font-size: 24px; letter-spacing: 0.2px; }
+
+h2 i { margin-right: 20px; color: #ff006c; }
+
+h3 { color: #333; font-size: 18px; }
+
+h3 i { margin-right: 10px; color: #0089ff; }
+
+a { color: #333; }
+
+a:hover { color: #ff006c; }
+
+strong { font-weight: 500; }
+
+.content-main ul:not([class*="gf"]) > li { position: relative; padding-left: 10px; }
+
+.content-main ul:not([class*="gf"]) > li:before { content: '\2022'; position: absolute; left: 0; }
+
+.content-main ol { counter-reset: li; }
+
+.content-main ol > li { position: relative; padding-left: 20px; }
+
+.content-main ol > li:before { content: counter(li) ". "; counter-increment: li; position: absolute; right: calc(100% - 15px); }
+
+.wrap { max-width: 1180px; width: 100%; margin: 0 auto; padding: 0 20px; }
+
+.flex { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+img { max-width: 100%; }
+
+/* != PLACEHOLDER ATTRIBUTE STYLES = input or textarea - placeholder="whatever" ===== */
+/* ::-webkit-input-placeholder { color: #aaa; } ::-moz-placeholder { color: #aaa; } */
+input[type=submit], button { display: inline-block; cursor: pointer; }
+
+.card { background-color: #fff; color: #333; -webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); }
+
+.card .card-body { padding: 20px; }
+
+.main-content { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+.main-content .content-main { width: 65%; margin-left: 20px; }
+
+.main-content .content-side { width: 35%; }
+
+@media screen and (max-width: 768px) { .main-content { display: block; }
+  .main-content .content-main { width: 100%; margin-top: 20px; margin-left: 0; }
+  .main-content .content-side { width: 100%; } }
+
+.section-title { margin-bottom: 20px; }
+
+.divider { margin-top: 25px; padding-top: 25px; border-top: 1px solid #efefef; }
+
+.top-space { margin-top: 25px; }
+
+.top-space-md { margin-top: 20px; }
+
+.top-space-sm { margin-top: 15px; }
+
+#header { height: 60px; }
+
+#header .wrap { height: 100%; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+#header .wrap .logo { display: block; width: 40px; height: 40px; }
+
+#header nav ul li a { display: block; height: 60px; padding: 0 10px; line-height: 60px; font-size: 18px; color: #fff; }
+
+#header nav ul li a:hover { color: #ff006c; }
+
+#main { padding: 40px 0; }
+
+@media screen and (max-width: 768px) { #main { padding: 20px 0; } }
+
+.profile-image { position: relative; font-size: 0; }
+
+.profile-image::before { content: ''; position: absolute; width: 100%; height: 100%; top: 0; left: 0; background-color: rgba(0, 0, 0, 0.4); background: -webkit-radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.5) 100%); background: -o-radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.5) 100%); background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.5) 100%); }
+
+.profile-image h1 { position: absolute; left: 20px; bottom: 5px; color: #333; }
+
+.profile-bio ul li i { color: #0089ff; margin-right: 10px; font-size: 16px; }
+
+.profile-bio ul li + li { margin-top: 5px; }
+
+.profile-skills h2 i { margin-right: 10px; }
+
+.profile-skills h3 { font-size: 16px; margin-bottom: 5px; }
+
+.profile-experience { margin-top: 20px; }
+
+.profile-projects { margin-top: 20px; }
+
+/*# sourceMappingURL=style.css.map */
